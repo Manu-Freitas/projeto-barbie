@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "keywords": ["Barbie", "Node"],
+  "keywords": [
+    "Barbie",
+    "Node"
+  ],
   "author": "Manuela Freitas",
   "license": "MIT",
   "description": "Atividade Barbies",

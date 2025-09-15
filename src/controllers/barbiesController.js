@@ -21,7 +21,7 @@ const getBarbiesById = (req, res) => {
   });
 };
 
-const createBarbie = (req, res) => {
+const createBarbies = (req, res) => {
   const { nome, profissao, anoLancamento } = req.body;
 
   if (!nome || !profissao) {
@@ -45,7 +45,7 @@ const createBarbie = (req, res) => {
   });
 };
 
-const deleteBarbie = (req, res) => {
+const deleteBarbies = (req, res) => {
   let id = parseInt(req.params.id);
 
   const barbieParaRemover = barbies.find((b) => b.id === id);
@@ -67,4 +67,4 @@ const deleteBarbie = (req, res) => {
     barbieRemovida: barbieParaRemover,
   });
 };
-export { getAllBarbies, getBarbiesById, createBarbie, deleteBarbie };
+export { getAllBarbies, getBarbiesById, createBarbies, deleteBarbies };
